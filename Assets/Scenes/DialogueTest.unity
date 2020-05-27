@@ -475,8 +475,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 2015306616}
-  selectedCommands:
-  - {fileID: 2015306617}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -529,8 +528,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 220
-    y: 63
+    x: 465
+    y: 203
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -611,8 +610,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 77
-    y: 116
+    x: 80
+    y: 108
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -683,9 +682,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 365
-    y: 107
-    width: 128
+    x: 608
+    y: 247
+    width: 125.2
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -710,8 +709,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 76
-    y: 221
+    x: 75
+    y: 240
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
