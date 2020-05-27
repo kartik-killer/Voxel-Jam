@@ -24,6 +24,8 @@ public class PlayerControl : MonoBehaviour
     public int enemiesNumber;
     public bool allEnemiesDead;
 
+    public Animator anim;
+
     void Start()
     {
         rb = this.GetComponent<Rigidbody>();
@@ -36,8 +38,17 @@ public class PlayerControl : MonoBehaviour
         moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));  /* Assigning movement values to our moveInput.
                                                                                                        Note : Using GetAxisRaw here so that the movement stops the moment input button is released*/
 
-        moveVelocity = moveInput * moveSpeed;  //For some reason, diagonal movement is faster than unidirectional movement (could be because of two inputs being applied) need to investigate further                                        
-
+        moveVelocity = moveInput * moveSpeed;  //For some reason, diagonal movement is faster than unidirectional movement (could be because of two inputs being applied) need to investigate further    
+        
+        if(Input.GetAxisRaw("Vertical") + Input.GetAxisRaw("Horizontal") != 0)
+        {
+            anim.SetBool("Move",true);
+        }
+        if(Input.GetAxisRaw("Horizontal") + Input.GetAxisRaw("Vertical") == 0)
+        {
+            anim.SetBool("Move", false);
+        }
+        
 
         if (useController==false) //This section of code is to be used if the player wants to use the mouse.
         {

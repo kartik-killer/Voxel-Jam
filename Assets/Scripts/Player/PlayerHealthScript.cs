@@ -20,7 +20,7 @@ public class PlayerHealthScript : MonoBehaviour
     {
         currentHealth = startingHealth; //setting the initial value
         rend = GetComponent<Renderer>(); //getting the renderer and storing it in 'rend'
-        storedColor = rend.material.GetColor("_Color"); //Getting the initial color of our player and storing it in 'storedColor'
+        //storedColor = rend.material.GetColor("_Color"); //Getting the initial color of our player and storing it in 'storedColor'
 
         
 	}

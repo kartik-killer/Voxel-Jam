@@ -8,13 +8,13 @@ public class EnemyHealthScript : MonoBehaviour
     public int health;
     private int currentHealth;
     public int scoreForKill;
-    public GameObject thePlayer;
+    public PlayerControl thePlayer;
 	
 	void Start ()
     {
         currentHealth = health; //initialising currentHealth value
-        thePlayer = GameObject.FindGameObjectWithTag("Player");
-	}
+        thePlayer = FindObjectOfType<PlayerControl>();
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -34,4 +34,5 @@ public class EnemyHealthScript : MonoBehaviour
         currentHealth -= damage; //currentHealth = currentHealth - damage;
 
     }
+    
 }
