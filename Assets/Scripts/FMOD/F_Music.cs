@@ -1,19 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using FMODUnity;
+using FMOD.Studio;
 public class F_Music : MonoBehaviour
 {
-  
-    // Start is called before the first frame update
+    [EventRef]
+    public string eventPath;
+    EventInstance music;
+
     void Start()
     {
-        
+        music = RuntimeManager.CreateInstance(eventPath);
+        music.start();
+        music.release();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDestroy()
     {
-        
+        music.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 }
