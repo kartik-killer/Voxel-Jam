@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class WaveManager : MonoBehaviour
 {
-    private enum State
+    public enum State
     {
         Idle,
-        Active
+        Active,
+        BattleOver
     }
-    private State state;
+    public State state;
 
     public Wave[] waveArray;
+
+    public int totalEnemies;
+    public int[] enemyNumbers;
 
     private void Awake()
     {
@@ -34,11 +38,39 @@ public class WaveManager : MonoBehaviour
                 {
                     wave.Update();
                 }
+                TestBattleOver();
                 break;
         }
-        
     }
+    private void TestBattleOver()
+    {
+        if(state == State.Active)
+        {
+            if (AreWavesOver())
+            {
+                //Battle is over
+                state = State.BattleOver;
 
+            }
+        }
+    }
+    private bool AreWavesOver()
+    {
+        foreach (Wave wave in waveArray)
+        {
+            if (wave.IsWaveOver())
+            {
+                //waves over
+                
+            }
+            else
+            {
+                //wave not over
+                return false;
+            }
+        }
+        return true;
+    }
 
     //Represents a single enemy spawn wave
     [System.Serializable]
@@ -47,6 +79,7 @@ public class WaveManager : MonoBehaviour
          public GameObject enemy;
          public PlayerHealthScript playerHealth;
          public Transform[] spawnPoints;
+        public EnemyHealthScript[] enemiesArray;
 
         public int numberOfWaveEnemies;
 
@@ -74,8 +107,31 @@ public class WaveManager : MonoBehaviour
                 }
                 int spawnPointIndex = Random.Range(0, spawnPoints.Length);
                 Instantiate(enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+                enemiesArray = FindObjectsOfType<EnemyHealthScript>();
             }
             
+        }
+        public bool IsWaveOver()
+        {
+            if (timer < 0)
+            {
+                //wave spawned
+                foreach(EnemyHealthScript enemyInstance in enemiesArray)
+                {
+                    if(enemyInstance.isAlive)
+                    {
+                        return false;
+                        
+                    }
+                }
+                return true;
+                
+            }
+            else
+            {
+                //enemies haven't spawned yet
+                return false;
+            }
         }
     }
 }

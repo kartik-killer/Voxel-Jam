@@ -9,6 +9,8 @@ public class EnemyHealthScript : MonoBehaviour
     private int currentHealth;
     public int scoreForKill;
     public PlayerControl thePlayer;
+    public bool isAlive = true;
+    public ParticleSystem deathParticle;
 	
 	void Start ()
     {
@@ -23,9 +25,10 @@ public class EnemyHealthScript : MonoBehaviour
         {
             ScoreManager.score += scoreForKill; /*add the specific enemy's score points to playerScore value from the PlayerHealthScript
                                                    Due to using the static variable, the score value can be accessed by just using 'ScoreManager.score'*/
+            isAlive = false;
+            Instantiate(deathParticle, transform.position, transform.rotation);
             Destroy(gameObject);
-            thePlayer.GetComponent<PlayerControl>().enemiesNumber--; /*reducing the array length value stored in enemiesNumber by 1. 
-                                                                        SO that everytime an enemy is killed, its value is decreased eventually to 0 which triggers animation*/
+            
         }
 
 	}

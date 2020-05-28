@@ -13,15 +13,16 @@ public class PlayerHealthScript : MonoBehaviour
     public float flashLength;
     private float flashCounter;
 
-    private Renderer rend; //renderer reference
+    private Light pointLight; //renderer reference
     private Color storedColor; //original player color reference
+    public Color damageColor;
 	
 	void Awake ()
     {
         currentHealth = startingHealth; //setting the initial value
-        rend = GetComponent<Renderer>(); //getting the renderer and storing it in 'rend'
-        //storedColor = rend.material.GetColor("_Color"); //Getting the initial color of our player and storing it in 'storedColor'
-
+        pointLight = GetComponentInChildren<Light>(); //getting the renderer and storing it in 'rend'
+        storedColor = pointLight.color; //Getting the initial color of our player and storing it in 'storedColor'
+        
         
 	}
 
@@ -32,10 +33,11 @@ public class PlayerHealthScript : MonoBehaviour
             flashCounter -= Time.deltaTime; //counting down the flash counter
             if (flashCounter < 0)
             {
-                rend.material.SetColor("_Color", storedColor); //restoring the color of our player from white to the original value
+                
+                pointLight.color = storedColor; //restoring the color of our player from white to the original value
             }
         }
-        healthSlider.value = currentHealth;
+        healthSlider.value = currentHealth/2;
         if (currentHealth <= 0)
         {
             gameObject.SetActive(false); //Player death
@@ -47,6 +49,7 @@ public class PlayerHealthScript : MonoBehaviour
         currentHealth -= damageAmount;
         
         flashCounter = flashLength;
-        rend.material.SetColor("_Color", Color.white); //changing the color of the material to white
+
+        pointLight.color = damageColor ; //changing the color of the material to white
     }
 }

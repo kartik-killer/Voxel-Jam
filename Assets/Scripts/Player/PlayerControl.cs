@@ -21,8 +21,6 @@ public class PlayerControl : MonoBehaviour
     public bool doubleDamageActive;
 
     public DoubleDamageTimer reference; //this is the reference to the spawn point of double damage pick up
-    public int enemiesNumber;
-    public bool allEnemiesDead;
 
     public Animator anim;
 
@@ -31,7 +29,7 @@ public class PlayerControl : MonoBehaviour
         rb = this.GetComponent<Rigidbody>();
         mainCamera = FindObjectOfType<Camera>(); //Referencing the only camera in the game
 
-        enemiesNumber = GameObject.FindGameObjectsWithTag("Enemy").Length;
+        
     }
 
     void Update()
@@ -108,10 +106,7 @@ public class PlayerControl : MonoBehaviour
             }
         }
 
-        if (enemiesNumber<=0) 
-        {
-            allEnemiesDead = true; //setting boolean value true so that the animation can be triggered
-        }
+        
     }
 
     void FixedUpdate()
