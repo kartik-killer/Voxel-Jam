@@ -354,6 +354,7 @@ GameObject:
   - component: {fileID: 5132748664631983684}
   - component: {fileID: 5132748664631983687}
   - component: {fileID: -8304191677118043871}
+  - component: {fileID: -1170219314415794562}
   m_Layer: 0
   m_Name: Zombie@Zombie Run
   m_TagString: Enemy
@@ -454,7 +455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de58d0678c1152a44b3a4a29827b60a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 70
+  health: 30
   scoreForKill: 1000
   thePlayer: {fileID: 0}
   isAlive: 1
@@ -483,6 +484,23 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &-1170219314415794562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3754527236988019377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bb5266c52205bd4785d61ab9b97d7b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeSize: 0.1
+  cubesInRow: 5
+  explosionForce: 50
+  explosionRadius: 4
+  explosionUpward: 0.4
 --- !u!1 &3830916175624265704
 GameObject:
   m_ObjectHideFlags: 0
