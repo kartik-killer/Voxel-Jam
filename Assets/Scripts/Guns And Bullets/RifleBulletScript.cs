@@ -26,7 +26,6 @@ public class RifleBulletScript : MonoBehaviour {
         transform.Translate(Vector3.forward * speed* Time.deltaTime); //This is used to transform the position of the bullet (to fire it at speed value 'speed')
 
         bulletLifeTime -= Time.deltaTime;
-        Debug.Log(damageInput);
 
         if (bulletLifeTime <= 0)
         {

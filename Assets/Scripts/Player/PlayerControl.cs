@@ -30,6 +30,7 @@ public class PlayerControl : MonoBehaviour
     {
         rb = this.GetComponent<Rigidbody>();
         mainCamera = FindObjectOfType<Camera>(); //Referencing the only camera in the game
+
         enemiesNumber = GameObject.FindGameObjectsWithTag("Enemy").Length;
     }
 

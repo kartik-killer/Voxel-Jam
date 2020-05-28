@@ -16,7 +16,7 @@ public class PlayerHealthScript : MonoBehaviour
     private Renderer rend; //renderer reference
     private Color storedColor; //original player color reference
 	
-	void Start ()
+	void Awake ()
     {
         currentHealth = startingHealth; //setting the initial value
         rend = GetComponent<Renderer>(); //getting the renderer and storing it in 'rend'
