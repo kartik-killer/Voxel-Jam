@@ -31,7 +31,7 @@ public class RifleScript : MonoBehaviour {
             //UI update to rifle
             timeBetweenShots = 0.2f;
             bulletSpeed = 25;
-            rifleDamage = 7;
+            rifleDamage = 10;
             currentRifleDamage = rifleDamage;
         }
         if (refNum.selectedWeapon == 2) //for pistol
