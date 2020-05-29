@@ -71,6 +71,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-8756109803266216797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MachineGunFullAuto/FullAuto
+  m_EditorClassIdentifier: 
+  Name: FullAuto
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
 --- !u!114 &-8704199778328732182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,12 +404,20 @@ MonoBehaviour:
   Path: event:/Weapons/MachineGunFullAuto
   guid: 1e04f4cee77a5b48a5a79499fb02cb9d
   Banks:
+<<<<<<< Updated upstream
   - {fileID: 1944258395324471221}
+=======
+  - {fileID: -3079190113655861603}
+>>>>>>> Stashed changes
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
+<<<<<<< Updated upstream
   - {fileID: 6840617460155076690}
+=======
+  - {fileID: -8756109803266216797}
+>>>>>>> Stashed changes
   MinDistance: 0
   MaxDistance: 0
   Length: 3824
@@ -860,11 +885,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/FMODBanks/Desktop/Master.strings.bank
   SubDir: 
+<<<<<<< Updated upstream
   lastModified: 637263426915610005
+=======
+  lastModified: 637263465860959537
+>>>>>>> Stashed changes
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 1218
+    Value: 1270
   Exists: 1
 --- !u!114 &-5831709865373686034
 MonoBehaviour:
@@ -1113,7 +1142,11 @@ MonoBehaviour:
   Path: event:/Zombies/ZombieRoar
   guid: 46560db3c35da24496060a7545b182e6
   Banks:
+<<<<<<< Updated upstream
   - {fileID: -2613606714741436981}
+=======
+  - {fileID: 448951308725177917}
+>>>>>>> Stashed changes
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -1477,6 +1510,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-3079190113655861603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Weapons.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/Weapons.bank
+  SubDir: 
+  lastModified: 637263465861418308
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-3017607796510687321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1795,6 +1846,24 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Music.bank
   SubDir: 
   lastModified: 637262795488706829
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-1694004273010240578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Weapons.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/Weapons.bank
+  SubDir: 
+  lastModified: 637262831699955877
   LoadResult: 0
   FileSizes: []
   Exists: 0
@@ -2149,10 +2218,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -6008998526244947987}
+<<<<<<< Updated upstream
   - {fileID: 5315056515723027381}
   - {fileID: 8309652871716643786}
   - {fileID: 1944258395324471221}
   - {fileID: -2613606714741436981}
+=======
+  - {fileID: 4334465471811584569}
+  - {fileID: 6922889456700245498}
+  - {fileID: -3079190113655861603}
+  - {fileID: 448951308725177917}
+>>>>>>> Stashed changes
   EditorEvents:
   - {fileID: 3356660255326630947}
   - {fileID: -6451969740065181292}
@@ -2162,12 +2238,20 @@ MonoBehaviour:
   - {fileID: 6035220696679276849}
   - {fileID: -7745643702200441114}
   - {fileID: -4737156084968674431}
+  - {fileID: 3798050525634819199}
   EditorParameters: []
   MasterBanks:
+<<<<<<< Updated upstream
   - {fileID: 5315056515723027381}
   StringsBanks:
   - {fileID: -6008998526244947987}
   stringsBankWriteTime: 637263426915610005
+=======
+  - {fileID: 4334465471811584569}
+  StringsBanks:
+  - {fileID: -6008998526244947987}
+  stringsBankWriteTime: 637263465860959537
+>>>>>>> Stashed changes
   cacheVersion: 3
 --- !u!114 &151463080997530152
 MonoBehaviour:
@@ -2259,6 +2343,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &448951308725177917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Zombies.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/Zombies.bank
+  SubDir: 
+  lastModified: 637263465861797291
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &499779204261303675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2524,7 +2626,11 @@ MonoBehaviour:
   Path: event:/Music/Music-Action
   guid: 6e34cd25e1a4204393ee2f02318c6eeb
   Banks:
+<<<<<<< Updated upstream
   - {fileID: 8309652871716643786}
+=======
+  - {fileID: 6922889456700245498}
+>>>>>>> Stashed changes
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2584,6 +2690,24 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
+  Exists: 0
+--- !u!114 &1652553978883060864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637262831699776350
+  LoadResult: 0
+  FileSizes: []
   Exists: 0
 --- !u!114 &1724949996352623540
 MonoBehaviour:
@@ -3149,6 +3273,29 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &3798050525634819199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Zombies/ZombiesExplode
+  m_EditorClassIdentifier: 
+  Path: event:/Zombies/ZombiesExplode
+  guid: c2f24e0ca114024ca8d05a145445bfe9
+  Banks:
+  - {fileID: 448951308725177917}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 5
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &3872252340099614135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3238,6 +3385,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &4334465471811584569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637263465860939584
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &4338758558293384402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3593,7 +3758,11 @@ MonoBehaviour:
   Path: event:/Music/DatingSim
   guid: f9b7c134d414bb4bb8afb44b6f6c6be8
   Banks:
+<<<<<<< Updated upstream
   - {fileID: 8309652871716643786}
+=======
+  - {fileID: 6922889456700245498}
+>>>>>>> Stashed changes
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -3794,6 +3963,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &6922889456700245498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637263465861218847
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &7055911276882222398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3937,6 +4124,24 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &7313793455923612106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637263465411506826
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &7457959823757302030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3952,7 +4157,11 @@ MonoBehaviour:
   Path: event:/Music/Music-Atmosphere
   guid: eabc603606d9624b8dc9317740da6a61
   Banks:
+<<<<<<< Updated upstream
   - {fileID: 8309652871716643786}
+=======
+  - {fileID: 6922889456700245498}
+>>>>>>> Stashed changes
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -3976,6 +4185,24 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
+  Exists: 0
+--- !u!114 &7743170480601144786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Zombies.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/Zombies.bank
+  SubDir: 
+  lastModified: 637262831700294976
+  LoadResult: 0
+  FileSizes: []
   Exists: 0
 --- !u!114 &7753997146780981186
 MonoBehaviour:
@@ -4118,7 +4345,11 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+<<<<<<< Updated upstream
 --- !u!114 &8309652871716643786
+=======
+--- !u!114 &8251019714088083851
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4127,6 +4358,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Music.bank
   m_EditorClassIdentifier: 
@@ -4136,6 +4368,16 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+=======
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MachineGunFullAuto/FullAuto
+  m_EditorClassIdentifier: 
+  Name: FullAuto
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+>>>>>>> Stashed changes
 --- !u!114 &8331807284106349986
 MonoBehaviour:
   m_ObjectHideFlags: 0
