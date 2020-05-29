@@ -13,7 +13,8 @@ public class PlayerHealthScript : MonoBehaviour
     public float flashLength;
     private float flashCounter;
 
-    private Light pointLight; //renderer reference
+    private Light pointLight;
+    public GameObject pointLightObject;//renderer reference
     private Color storedColor; //original player color reference
     public Color damageColor;
 
@@ -22,7 +23,7 @@ public class PlayerHealthScript : MonoBehaviour
 	void Awake ()
     {
         currentHealth = startingHealth; //setting the initial value
-        pointLight = GetComponentInChildren<Light>(); //getting the renderer and storing it in 'rend'
+        pointLight = pointLightObject.GetComponentInChildren<Light>(); //getting the renderer and storing it in 'rend'
         storedColor = pointLight.color; //Getting the initial color of our player and storing it in 'storedColor'
 	}
 

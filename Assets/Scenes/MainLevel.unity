@@ -1406,7 +1406,7 @@ GameObject:
   - component: {fileID: 232854323}
   - component: {fileID: 232854324}
   m_Layer: 8
-  m_Name: Point Light
+  m_Name: MuzzleFlash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4579,6 +4579,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b457c4729fafdca4297487ff3e75a1fb,
     type: 3}
   m_PrefabInstance: {fileID: 580346866}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &581178583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5512547700909677989, guid: 4e1c6173328bab54488bf41bdc66047d,
+    type: 3}
+  m_PrefabInstance: {fileID: 6307717213118169864}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &591308222
 PrefabInstance:
@@ -18314,6 +18320,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.0014
       objectReference: {fileID: 0}
+    - target: {fileID: 8862053384933992806, guid: ffe2a0bd6d1e44e4eadab42e157c036b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffe2a0bd6d1e44e4eadab42e157c036b, type: 3}
 --- !u!1001 &391993399045360040
@@ -18637,6 +18648,11 @@ PrefabInstance:
       propertyPath: damageColor.b
       value: 0.36470592
       objectReference: {fileID: 0}
+    - target: {fileID: 6307717212560344043, guid: 4e1c6173328bab54488bf41bdc66047d,
+        type: 3}
+      propertyPath: pointLightObject
+      value: 
+      objectReference: {fileID: 581178583}
     - target: {fileID: 6307717213081281390, guid: 4e1c6173328bab54488bf41bdc66047d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18936,6 +18952,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512547700909677989, guid: 4e1c6173328bab54488bf41bdc66047d,
+        type: 3}
+      propertyPath: m_Name
+      value: HitFeedbackLight
       objectReference: {fileID: 0}
     - target: {fileID: 6307717212358905863, guid: 4e1c6173328bab54488bf41bdc66047d,
         type: 3}
