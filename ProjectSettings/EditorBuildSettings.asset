@@ -7,8 +7,17 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
+    guid: 93b358b1f6d67d541a5c3e9a67f367f6
+  - enabled: 1
+    path: Assets/Scenes/DatingScene.unity
     guid: 87b9ef013b8281b4eb74e7688494a6f7
   - enabled: 1
     path: Assets/Scenes/MainLevel.unity
     guid: 04e599f18af4095499d2c3e1feac8f02
+  - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: 6b14650db6393dd4cb07d86a189c8f0c
+  - enabled: 1
+    path: Assets/Scenes/LoseScene.unity
+    guid: 082345d054d1c2747b1c83805bce5fde
   m_configObjects: {}

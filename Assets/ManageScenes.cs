@@ -12,11 +12,11 @@ public class ManageScenes : MonoBehaviour
     {
         if(waveRef.state == WaveManager.State.BattleOver)
         {
-            Debug.Log("Change to win screen");
+            SceneManager.LoadScene("WinScene");
         }
         if(playerHealthRef.currentHealth <= 0)
         {
-            Debug.Log("Change to Lose Screen");
+            SceneManager.LoadScene("LoseScene");
         }
     }
 }

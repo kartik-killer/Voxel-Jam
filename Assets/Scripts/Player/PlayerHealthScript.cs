@@ -16,14 +16,14 @@ public class PlayerHealthScript : MonoBehaviour
     private Light pointLight; //renderer reference
     private Color storedColor; //original player color reference
     public Color damageColor;
+
+
 	
 	void Awake ()
     {
         currentHealth = startingHealth; //setting the initial value
         pointLight = GetComponentInChildren<Light>(); //getting the renderer and storing it in 'rend'
         storedColor = pointLight.color; //Getting the initial color of our player and storing it in 'storedColor'
-        
-        
 	}
 
     void Update()
@@ -33,7 +33,6 @@ public class PlayerHealthScript : MonoBehaviour
             flashCounter -= Time.deltaTime; //counting down the flash counter
             if (flashCounter < 0)
             {
-                
                 pointLight.color = storedColor; //restoring the color of our player from white to the original value
             }
         }

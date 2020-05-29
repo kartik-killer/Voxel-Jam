@@ -16,16 +16,30 @@ public class RifleScript : MonoBehaviour {
     public int rifleDamage;
     public int currentRifleDamage;
 
+    public GameObject litLight;
+    public float flashLength;
+    private float flashCounter;
+
     public WeaponSwitchScript refNum;
 	
 	void Start ()
     {
         currentRifleDamage = rifleDamage;
+        litLight.SetActive(false);
 	}
 	
 	
 	void Update ()
     {
+
+        if (flashCounter > 0)
+        {
+            flashCounter -= Time.deltaTime; //counting down the flash counter
+            if (flashCounter < 0)
+            {
+                litLight.SetActive(false);
+            }
+        }
         if (refNum.selectedWeapon == 1) //for rifle
         {
             //UI update to rifle
@@ -64,6 +78,9 @@ public class RifleScript : MonoBehaviour {
                 RifleBulletScript newBullet = Instantiate(bullet, firePoint.position, firePoint.rotation) as RifleBulletScript;  /*Instantiating bullet at fire point with all 
                                                                                                                                the properties of bullet (from RifleBulletScript)*/
                 newBullet.speed = bulletSpeed;
+
+                flashCounter = flashLength;
+                litLight.SetActive(true);
             }
         }
 
