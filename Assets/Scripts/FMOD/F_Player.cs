@@ -6,7 +6,7 @@ using FMODUnity;
 
 public class F_Player : MonoBehaviour
 {
-    EventInstance gunShot;
+    public static EventInstance gunShot;
 
     private void Start()
     {
@@ -28,6 +28,6 @@ public class F_Player : MonoBehaviour
 
     private void OnDestroy()
     {
-        gunShot.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        
     }
 }

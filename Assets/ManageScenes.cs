@@ -8,15 +8,44 @@ public class ManageScenes : MonoBehaviour
     public WaveManager waveRef;
     public PlayerHealthScript playerHealthRef;
 
+    [SerializeField]
+    private GameObject gameover;
+
+    [SerializeField]
+    private GameObject cleared;
+
+    private bool winSoundPlayed = false;
+    private bool loseSoundPlayed = false;
+    
     private void Update()
     {
-        if(waveRef.state == WaveManager.State.BattleOver)
+        if(waveRef.state == WaveManager.State.BattleOver && winSoundPlayed == false)
         {
-            SceneManager.LoadScene("WinScene");
+            F_Music.music.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            FMODUnity.RuntimeManager.PlayOneShotAttached("event:/WinLoss/Win", this.gameObject);
+            StartCoroutine(YouWin());
+            winSoundPlayed = true;
         }
-        if(playerHealthRef.currentHealth <= 0)
+        if(playerHealthRef.currentHealth <= 0 && loseSoundPlayed == false)
         {
-            SceneManager.LoadScene("LoseScene");
+            F_Music.music.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            FMODUnity.RuntimeManager.PlayOneShotAttached("event:/WinLoss/Lose", this.gameObject);
+            StartCoroutine(GameOver());
+            loseSoundPlayed = true;
         }
+    }
+
+    IEnumerator GameOver()
+    {
+        gameover.gameObject.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene("LoseScene");
+    }
+
+    IEnumerator YouWin()
+    {     
+        cleared.gameObject.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene("WinScene");
     }
 }

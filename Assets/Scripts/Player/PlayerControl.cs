@@ -115,4 +115,9 @@ public class PlayerControl : MonoBehaviour
                                        physics itself. Hence, fixed update is used so that this value is in synchronization with the physics and the engine
                                        This also smoothens out the movement*/
     }
+
+    private void OnDisable()
+    {
+        F_Player.gunShot.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+    }
 }

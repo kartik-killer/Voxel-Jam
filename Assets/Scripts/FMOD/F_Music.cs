@@ -7,7 +7,7 @@ public class F_Music : MonoBehaviour
 {
     [EventRef]
     public string eventPath;
-    EventInstance music;
+    public static EventInstance music;
 
     void Start()
     {

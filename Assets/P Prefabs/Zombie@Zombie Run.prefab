@@ -455,7 +455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de58d0678c1152a44b3a4a29827b60a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 60
+  health: 50
   scoreForKill: 1000
   thePlayer: {fileID: 0}
   isAlive: 1
