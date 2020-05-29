@@ -15,6 +15,8 @@ public class Explosion : MonoBehaviour
     public float explosionForce = 50f;
     public float explosionRadius = 4f;
     public float explosionUpward = 0.4f;
+
+    public float destroyTime;
     
     
     void Start()
@@ -67,7 +69,7 @@ public class Explosion : MonoBehaviour
 
         piece.GetComponent<Renderer>().material.color = Color.red;
 
-        Destroy(piece, 10);
+        Destroy(piece, destroyTime);
         
     }
 

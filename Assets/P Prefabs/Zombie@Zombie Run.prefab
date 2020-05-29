@@ -499,6 +499,7 @@ MonoBehaviour:
   explosionForce: 50
   explosionRadius: 4
   explosionUpward: 0.4
+  destroyTime: 2
 --- !u!1 &3830916175624265704
 GameObject:
   m_ObjectHideFlags: 0

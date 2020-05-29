@@ -14,9 +14,6 @@ public class WaveManager : MonoBehaviour
 
     public Wave[] waveArray;
 
-    public int totalEnemies;
-    public int[] enemyNumbers;
-
     private void Awake()
     {
         state = State.Idle;
