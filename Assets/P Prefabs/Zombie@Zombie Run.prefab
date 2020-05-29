@@ -455,12 +455,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de58d0678c1152a44b3a4a29827b60a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 30
+  health: 60
   scoreForKill: 1000
   thePlayer: {fileID: 0}
   isAlive: 1
-  deathParticle: {fileID: 7121478522260728373, guid: 3ba90a171b1b7a14192f75ef9dc890b4,
-    type: 3}
 --- !u!114 &-8304191677118043871
 MonoBehaviour:
   m_ObjectHideFlags: 0

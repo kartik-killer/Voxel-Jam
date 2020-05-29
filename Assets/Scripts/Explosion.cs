@@ -30,6 +30,8 @@ public class Explosion : MonoBehaviour
 
     public void explode()
     {
+
+        FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Zombies/ZombiesExplode", this.gameObject);
         gameObject.SetActive(false);
 
         for (int x  = 0; x < cubesInRow; x++) {

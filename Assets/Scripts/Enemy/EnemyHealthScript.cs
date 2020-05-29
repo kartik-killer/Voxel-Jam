@@ -10,7 +10,7 @@ public class EnemyHealthScript : MonoBehaviour
     public int scoreForKill;
     public PlayerControl thePlayer;
     public bool isAlive = true;
-    public ParticleSystem deathParticle;
+    //public ParticleSystem deathParticle;
 	
 	void Start ()
     {
@@ -26,7 +26,7 @@ public class EnemyHealthScript : MonoBehaviour
             ScoreManager.score += scoreForKill; /*add the specific enemy's score points to playerScore value from the PlayerHealthScript
                                                    Due to using the static variable, the score value can be accessed by just using 'ScoreManager.score'*/
             isAlive = false;
-            Instantiate(deathParticle, transform.position, transform.rotation);
+            //Instantiate(deathParticle, transform.position, transform.rotation);
             Destroy(gameObject);
             
         }
