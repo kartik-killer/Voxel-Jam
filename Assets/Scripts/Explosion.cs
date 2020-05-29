@@ -56,6 +56,8 @@ public class Explosion : MonoBehaviour
         }
     }
 
+  
+
     void createPiece(int x, int y, int z)
     {
         GameObject piece;
@@ -72,5 +74,7 @@ public class Explosion : MonoBehaviour
         Destroy(piece, destroyTime);
         
     }
+
+ 
 
 }

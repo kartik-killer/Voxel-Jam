@@ -46,6 +46,8 @@ public class PlayerHealthScript : MonoBehaviour
     }
     public void HurtPlayer(int damageAmount)
     {
+        FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Player/Hurt", this.gameObject);
+
         currentHealth -= damageAmount;
         
         flashCounter = flashLength;

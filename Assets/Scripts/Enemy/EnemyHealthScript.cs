@@ -34,6 +34,7 @@ public class EnemyHealthScript : MonoBehaviour
 	}
     public void HurtEnemy(int damage)
     {
+        FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Weapons/Hit", this.gameObject);
         currentHealth -= damage; //currentHealth = currentHealth - damage;
 
     }
