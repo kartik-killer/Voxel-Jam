@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 491401875}
   - component: {fileID: 491401876}
   - component: {fileID: 491401877}
+  - component: {fileID: 491401878}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -288,9 +289,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: 'Its been a month since the plague started you are walking through a
-    street you notice a woman dressed in fancy clothes standing near a house. You
-    think she is quite pretty so you approach her. '
+  storyText: (It's been a month since the plague started. You are walking through
+    a street and you notice a girl dressed in fancy clothes standing near a house.)
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -343,17 +343,18 @@ MonoBehaviour:
   eventHandler: {fileID: 491401861}
   commandList:
   - {fileID: 491401860}
+  - {fileID: 491401878}
   - {fileID: 491401866}
   - {fileID: 491401865}
   - {fileID: 491401867}
   - {fileID: 491401871}
   - {fileID: 491401870}
   - {fileID: 491401869}
-  - {fileID: 491401868}
-  - {fileID: 491401874}
   - {fileID: 491401875}
-  - {fileID: 491401873}
+  - {fileID: 491401868}
   - {fileID: 491401876}
+  - {fileID: 491401874}
+  - {fileID: 491401873}
   - {fileID: 491401872}
   - {fileID: 491401877}
 --- !u!114 &491401863
@@ -383,7 +384,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 491401862}
   selectedCommands:
-  - {fileID: 491401874}
+  - {fileID: 491401876}
   variables: []
   description: 
   stepPause: 0
@@ -429,8 +430,8 @@ MonoBehaviour:
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 21300000, guid: 75ccedb170ce5e94abe8f9f4362df1aa, type: 3}
   offset: 0
-  fromPosition: {fileID: 1311068582}
-  toPosition: {fileID: 2123021667}
+  fromPosition: {fileID: 793000047}
+  toPosition: {fileID: 793000047}
   facing: 0
   useDefaultSettings: 1
   fadeDuration: 0.5
@@ -455,7 +456,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Hi, My name is Chiro
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1680584652}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -643,7 +644,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 10
   indentLevel: 0
-  storyText: You hear the sound of zombies approaching...{audio=zombieSound}{w=2}
+  storyText: (You hear the sound of zombies approaching...){audio=zombieSound}{w=2}
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -672,7 +673,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: '{w=2}What was that!?'
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1051261494}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 8300000, guid: 6f581942cf6a04d4e9b1de49a2f35c6d, type: 3}
   showAlways: 1
@@ -697,11 +698,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 12
   indentLevel: 0
-  display: 3
+  display: 1
   stage: {fileID: 0}
   character: {fileID: 1051261494}
   replacedCharacter: {fileID: 1051261494}
-  portrait: {fileID: 21300000, guid: 8d115929e37431d4cad2342104f85120, type: 3}
+  portrait: {fileID: 21300000, guid: 1e58102f5d5dd0a4386ad2f0517b0463, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
@@ -731,7 +732,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1051261494}
   replacedCharacter: {fileID: 1051261494}
-  portrait: {fileID: 21300000, guid: 8d115929e37431d4cad2342104f85120, type: 3}
+  portrait: {fileID: 21300000, guid: 313f7fe68dbf4f943b00889735eebb48, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
@@ -762,6 +763,33 @@ MonoBehaviour:
     stringVal: MainLevel
   loadingImage: {fileID: 0}
   sceneNameOLD: 
+--- !u!114 &491401878
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491401859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 15
+  indentLevel: 0
+  storyText: (You think she is quite pretty so you approach her.)
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &756946730
 GameObject:
   m_ObjectHideFlags: 0
@@ -1570,11 +1598,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: Princess
-  nameColor: {r: 0.16509432, g: 0.9529256, b: 1, a: 1}
+  nameColor: {r: 1, g: 0, b: 0.27964067, a: 1}
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: 75ccedb170ce5e94abe8f9f4362df1aa, type: 3}
   - {fileID: 21300000, guid: 8d115929e37431d4cad2342104f85120, type: 3}
+  - {fileID: 21300000, guid: 1e58102f5d5dd0a4386ad2f0517b0463, type: 3}
+  - {fileID: 21300000, guid: 313f7fe68dbf4f943b00889735eebb48, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -2234,7 +2264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.3726415, b: 0.6210619, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2242,7 +2272,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 79197ecfbc3a4294a89ce589dac02cf2, type: 3}
     m_FontSize: 45
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 50
@@ -2291,7 +2321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: Player
-  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  nameColor: {r: 0, g: 0.37760258, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
   portraitsFace: 0
