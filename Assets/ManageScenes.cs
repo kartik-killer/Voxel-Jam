@@ -16,6 +16,8 @@ public class ManageScenes : MonoBehaviour
 
     private bool winSoundPlayed = false;
     private bool loseSoundPlayed = false;
+
+    public Animator anim;
     
     private void Update()
     {
@@ -39,6 +41,8 @@ public class ManageScenes : MonoBehaviour
     {
         gameover.gameObject.SetActive(true);
         yield return new WaitForSeconds(5f);
+        anim.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("LoseScene");
     }
 
@@ -46,6 +50,8 @@ public class ManageScenes : MonoBehaviour
     {     
         cleared.gameObject.SetActive(true);
         yield return new WaitForSeconds(5f);
+        anim.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("WinScene");
     }
 }
