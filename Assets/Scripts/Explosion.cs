@@ -56,7 +56,6 @@ public class Explosion : MonoBehaviour
         }
     }
 
-  
 
     void createPiece(int x, int y, int z)
     {
@@ -72,9 +71,5 @@ public class Explosion : MonoBehaviour
         piece.GetComponent<Renderer>().material.color = Color.red;
 
         Destroy(piece, destroyTime);
-        
     }
-
- 
-
 }

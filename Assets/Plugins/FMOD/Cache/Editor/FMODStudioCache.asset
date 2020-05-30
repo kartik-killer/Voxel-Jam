@@ -89,6 +89,24 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 1
+--- !u!114 &-6908414941824181484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Weapons.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/Weapons.bank
+  SubDir: 
+  lastModified: 637263864630193744
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-5688298677346474567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,12 +122,12 @@ MonoBehaviour:
   Path: event:/Weapons/MachineGunFullAuto
   guid: 1e04f4cee77a5b48a5a79499fb02cb9d
   Banks:
-  - {fileID: -3086390647460475494}
+  - {fileID: -6908414941824181484}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 405286129445992808}
+  - {fileID: -2587413720127182328}
   MinDistance: 0
   MaxDistance: 0
   Length: 3824
@@ -167,6 +185,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-3604876406013828596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637263930915200906
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-3086390647460475494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,6 +221,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-2587413720127182328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MachineGunFullAuto/FullAuto
+  m_EditorClassIdentifier: 
+  Name: FullAuto
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
 --- !u!114 &-1736327955577340130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,7 +253,7 @@ MonoBehaviour:
   Path: event:/Music/Music-Action
   guid: 6e34cd25e1a4204393ee2f02318c6eeb
   Banks:
-  - {fileID: 4356227092007679684}
+  - {fileID: 70377915319775759}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -294,7 +347,7 @@ MonoBehaviour:
   Path: event:/WinLoss/Lose
   guid: 0f3f31923d73fc48939dda2b9edbc3e0
   Banks:
-  - {fileID: 4356227092007679684}
+  - {fileID: 70377915319775759}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -316,13 +369,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 6108834017489467733}
-  - {fileID: -523452912818185110}
-  - {fileID: -8343922507797936213}
-  - {fileID: 5009885417206770939}
-  - {fileID: 4356227092007679684}
-  - {fileID: -9096054294737026835}
-  - {fileID: -3086390647460475494}
-  - {fileID: -1324391907060488361}
+  - {fileID: 3238523279326561074}
+  - {fileID: 4229310395608214592}
+  - {fileID: -3604876406013828596}
+  - {fileID: 70377915319775759}
+  - {fileID: 3090208793693557492}
+  - {fileID: -6908414941824181484}
+  - {fileID: 6682937410092893234}
   EditorEvents:
   - {fileID: 8231223170588104100}
   - {fileID: -339226673633184498}
@@ -337,11 +390,29 @@ MonoBehaviour:
   - {fileID: 7003975996646087957}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 5009885417206770939}
+  - {fileID: -3604876406013828596}
   StringsBanks:
   - {fileID: 6108834017489467733}
-  stringsBankWriteTime: 637264371749048009
+  stringsBankWriteTime: 637264402915526478
   cacheVersion: 3
+--- !u!114 &70377915319775759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637263930915513403
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &405286129445992808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,7 +481,7 @@ MonoBehaviour:
   Path: event:/Music/Music-Atmosphere
   guid: eabc603606d9624b8dc9317740da6a61
   Banks:
-  - {fileID: 4356227092007679684}
+  - {fileID: 70377915319775759}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -418,6 +489,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 68031
+--- !u!114 &3090208793693557492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Player.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/Player.bank
+  SubDir: 
+  lastModified: 637263864630173803
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &3112700156614100907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,6 +522,24 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.bank
   SubDir: 
   lastModified: 637263930915200906
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &3238523279326561074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/DatingSim.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/DatingSim.bank
+  SubDir: 
+  lastModified: 637263864630223679
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -469,7 +576,7 @@ MonoBehaviour:
   Path: event:/Zombies/ZombiesExplode
   guid: c2f24e0ca114024ca8d05a145445bfe9
   Banks:
-  - {fileID: -1324391907060488361}
+  - {fileID: 6682937410092893234}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -477,6 +584,24 @@ MonoBehaviour:
   MinDistance: 5
   MaxDistance: 20
   Length: 718
+--- !u!114 &4229310395608214592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/MainMenu.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/MainMenu.bank
+  SubDir: 
+  lastModified: 637264402915735941
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &4356227092007679684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -528,7 +653,7 @@ MonoBehaviour:
   Path: event:/Zombies/ZombieRoar
   guid: 46560db3c35da24496060a7545b182e6
   Banks:
-  - {fileID: -1324391907060488361}
+  - {fileID: 6682937410092893234}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -586,7 +711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/FMODBanks/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637264371749048009
+  lastModified: 637264402915526478
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -625,7 +750,7 @@ MonoBehaviour:
   Path: event:/Weapons/Hit
   guid: fb48c0cc689df4458952128ad7854746
   Banks:
-  - {fileID: -3086390647460475494}
+  - {fileID: -6908414941824181484}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -633,6 +758,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 500
+--- !u!114 &6682937410092893234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Zombies.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/Zombies.bank
+  SubDir: 
+  lastModified: 637263635829899031
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &6730113437977518598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -701,7 +844,7 @@ MonoBehaviour:
   Path: event:/Music/MainMenu
   guid: f4005978234a5a468e23d65f7ce5e437
   Banks:
-  - {fileID: -8343922507797936213}
+  - {fileID: 4229310395608214592}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -760,7 +903,7 @@ MonoBehaviour:
   Path: event:/Music/DatingSim
   guid: f9b7c134d414bb4bb8afb44b6f6c6be8
   Banks:
-  - {fileID: -523452912818185110}
+  - {fileID: 3238523279326561074}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -783,7 +926,7 @@ MonoBehaviour:
   Path: event:/Player/Hurt
   guid: 3214817148c98d4cbfebaabe9c332eb5
   Banks:
-  - {fileID: -9096054294737026835}
+  - {fileID: 3090208793693557492}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -824,7 +967,7 @@ MonoBehaviour:
   Path: event:/WinLoss/Win
   guid: ba6ad6c2adfe3849b14577e0769bd9af
   Banks:
-  - {fileID: 4356227092007679684}
+  - {fileID: 70377915319775759}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
