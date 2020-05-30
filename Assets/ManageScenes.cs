@@ -8,11 +8,11 @@ public class ManageScenes : MonoBehaviour
     public WaveManager waveRef;
     public PlayerHealthScript playerHealthRef;
 
-    [SerializeField]
-    private GameObject gameover;
+    
+    public GameObject gameover;
 
-    [SerializeField]
-    private GameObject cleared;
+   
+    public GameObject cleared;
 
     private bool winSoundPlayed = false;
     private bool loseSoundPlayed = false;

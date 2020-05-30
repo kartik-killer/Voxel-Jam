@@ -78,6 +78,7 @@ MonoBehaviour:
   - Master
   Banks:
   - DatingSim
+  - MainMenu
   - Music
   - Player
   - Weapons
